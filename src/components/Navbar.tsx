@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
@@ -32,8 +33,15 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#top" className="text-lg font-semibold tracking-tight">
-          Syl<span className="text-gradient">com</span>
+        <a href="#top" className="flex items-center">
+          <Image
+            src="/brand/logo-mark.svg"
+            alt="Sylcom"
+            width={137}
+            height={40}
+            priority
+            className="h-8 w-auto sm:h-9"
+          />
         </a>
 
         <ul className="hidden items-center gap-8 text-sm text-muted md:flex">

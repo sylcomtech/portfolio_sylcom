@@ -1,14 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #050508;
-  --foreground: #f4f4f6;
-  --muted: #9a9aa8;
-  --accent: #7c5cff;
-  --accent-2: #22d3ee;
-  --accent-3: #ff5cad;
-  --border: rgba(244, 244, 246, 0.1);
-  --surface: rgba(255, 255, 255, 0.04);
+  /* Identidade visual Sylcom */
+  --background: #100a1f;
+  --foreground: #f7f5fb;
+  --muted: #9a90ac;
+  --accent: #7c3aed;
+  --accent-2: #d24fdc;
+  --accent-3: #ffc9ea;
+  --deep: #1e1233;
+  --border: rgba(247, 245, 251, 0.1);
+  --surface: rgba(247, 245, 251, 0.04);
 }
 
 @theme inline {
@@ -18,6 +20,7 @@
   --color-accent: var(--accent);
   --color-accent-2: var(--accent-2);
   --color-accent-3: var(--accent-3);
+  --color-deep: var(--deep);
   --color-border: var(--border);
   --color-surface: var(--surface);
   --font-sans: var(--font-geist-sans);
@@ -40,7 +43,7 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(90deg, var(--accent-2), var(--accent), var(--accent-3));
+  background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--accent-3));
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
