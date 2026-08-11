@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { stats, services } from "@/lib/data";
-import Counter from "./Counter";
+import { services } from "@/lib/data";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -34,24 +33,7 @@ export default function About() {
           </p>
         </motion.div>
 
-        <motion.div
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ staggerChildren: 0.1 }}
-          className="mt-16 grid grid-cols-2 gap-8 border-y border-border py-10 sm:grid-cols-4"
-        >
-          {stats.map((stat) => (
-            <motion.div key={stat.label} variants={fadeUp} className="text-center sm:text-left">
-              <div className="text-3xl font-semibold text-gradient sm:text-4xl">
-                <Counter value={stat.value} suffix={stat.suffix ?? ""} />
-              </div>
-              <div className="mt-2 text-sm text-muted">{stat.label}</div>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        <div id="servicos" className="mt-24 scroll-mt-24">
+        <div id="servicos" className="mt-20 scroll-mt-24 border-t border-border pt-16">
           <motion.h3
             initial="hidden"
             whileInView="show"
