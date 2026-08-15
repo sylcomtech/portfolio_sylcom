@@ -22,9 +22,9 @@ export type TeamMember = {
   photo?: string;
 };
 
-// 3 of 4 are still placeholder ("Integrante N") until the real info comes
-// in — intentionally generic rather than invented, so nobody mistakes them
-// for real team members before they're swapped out.
+// Roles are in English by request. Luis Henrique's bio was explicitly
+// left to Claude's judgment ("pode inventar") — everyone else's bio is
+// what was actually provided, not invented.
 export const team: TeamMember[] = [
   {
     name: "Luan Comelli",
@@ -32,9 +32,24 @@ export const team: TeamMember[] = [
     bio: "Desenvolvedor, graduado em Informática Biomédica.",
     photo: "/team/luan-comelli.jpg",
   },
-  { name: "Integrante 2", role: "Cargo", bio: "Uma frase curta sobre a especialidade dessa pessoa." },
-  { name: "Integrante 3", role: "Cargo", bio: "Uma frase curta sobre a especialidade dessa pessoa." },
-  { name: "Integrante 4", role: "Cargo", bio: "Uma frase curta sobre a especialidade dessa pessoa." },
+  {
+    name: "Tomas Volker",
+    role: "Developer",
+    bio: "Técnico em Desenvolvimento Web e Mobile.",
+    photo: "/team/tomas-volker.png",
+  },
+  {
+    name: "Alisson Pinheiro",
+    role: "Developer",
+    bio: "Full stack com foco em dados.",
+    photo: "/team/alisson-pinheiro.png",
+  },
+  {
+    name: "Luis Henrique",
+    role: "Marketing Director",
+    bio: "Estratégia de marketing e growth para produtos digitais.",
+    photo: "/team/luis-henrique.png",
+  },
 ];
 
 export const services: {
