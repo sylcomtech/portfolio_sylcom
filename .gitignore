@@ -36,6 +36,14 @@ yarn-error.log*
 # vercel
 .vercel
 
+# ruflo / claude-flow local tooling (hooks, agents, MCP config, local DBs) —
+# session-local, not part of the app, shouldn't ship to the shared repo
+.claude/
+.claude-flow/
+.swarm/
+.mcp.json
+ruvector.db
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
