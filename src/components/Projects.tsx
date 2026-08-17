@@ -51,7 +51,7 @@ function ProjectCard({ project }: { project: Project }) {
       initial="hidden"
       animate="show"
       exit={{ opacity: 0, y: -30, scale: 0.85, transition: { duration: 0.25 } }}
-      whileHover={{ y: -14, scale: 1.03, rotate: -1 }}
+      whileHover={{ y: -4, scale: 1.015 }}
       transition={{ type: "spring", stiffness: 260, damping: 18 }}
       className="group relative overflow-hidden rounded-2xl border border-border bg-surface"
     >
@@ -70,7 +70,7 @@ function ProjectCard({ project }: { project: Project }) {
             alt={`Captura de tela do site ${project.title}`}
             fill
             sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-            className="object-cover object-top transition-transform duration-500 group-hover:scale-125 group-hover:rotate-1"
+            className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
           />
         ) : (
           <motion.span
@@ -87,9 +87,9 @@ function ProjectCard({ project }: { project: Project }) {
 
         {project.href && (
           <motion.div
-            initial={{ opacity: 0, scale: 0.5, rotate: -45 }}
-            whileHover={{ scale: 1.15 }}
-            className="absolute right-4 top-4 rounded-full bg-black/25 p-2 opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100 group-hover:rotate-0"
+            initial={{ opacity: 0, scale: 0.7 }}
+            whileHover={{ scale: 1.08 }}
+            className="absolute right-4 top-4 rounded-full bg-black/25 p-2 opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100"
           >
             <ArrowUpRight size={18} className="text-white" />
           </motion.div>
@@ -106,7 +106,7 @@ function ProjectCard({ project }: { project: Project }) {
           {project.tags.map((tag) => (
             <motion.span
               key={tag}
-              whileHover={{ scale: 1.15, y: -2 }}
+              whileHover={{ scale: 1.05 }}
               className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground"
             >
               {tag}

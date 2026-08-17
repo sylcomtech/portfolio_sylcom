@@ -12,7 +12,20 @@ export type Project = {
   href?: string;
 };
 
-export const projects: Project[] = [];
+export const projects: Project[] = [
+  {
+    slug: "porto-aliancas",
+    title: "Porto Alianças",
+    client: "Porto Alianças",
+    category: "Site institucional",
+    description:
+      "Site institucional para uma joalheria especializada em alianças de casamento e compromisso sob medida, com galeria da coleção, depoimentos, FAQ e contato direto via WhatsApp.",
+    tags: ["React", "Vite", "WhatsApp"],
+    gradient: "from-amber-500 via-yellow-700 to-emerald-950",
+    image: "/projects/porto-aliancas.png",
+    href: "https://portoaliancas.vercel.app/",
+  },
+];
 
 export type TeamMember = {
   name: string;
