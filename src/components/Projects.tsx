@@ -97,9 +97,11 @@ function ProjectCard({ project }: { project: Project }) {
       </a>
 
       <div className="p-6">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-3">
           <h3 className="text-lg font-medium">{project.title}</h3>
-          <span className="text-xs text-muted-foreground">{project.client}</span>
+          <span className="shrink-0 rounded-full border border-accent/30 bg-accent/10 px-2.5 py-0.5 text-[11px] font-medium text-accent">
+            {project.category}
+          </span>
         </div>
         <p className="mt-2 text-sm text-muted-foreground">{project.description}</p>
         <div className="mt-4 flex flex-wrap gap-2">

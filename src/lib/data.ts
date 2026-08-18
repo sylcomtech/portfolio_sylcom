@@ -4,7 +4,7 @@ export type Project = {
   slug: string;
   title: string;
   client: string;
-  category: "Site institucional" | "E-commerce" | "App mobile" | "Sistema web";
+  category: "Site institucional" | "E-commerce" | "App mobile" | "Sistema web" | "Varejo" | "Landing Page";
   description: string;
   tags: string[];
   gradient: string;
@@ -17,13 +17,25 @@ export const projects: Project[] = [
     slug: "porto-aliancas",
     title: "Porto Alianças",
     client: "Porto Alianças",
-    category: "Site institucional",
+    category: "Varejo",
     description:
       "Site institucional para uma joalheria especializada em alianças de casamento e compromisso sob medida, com galeria da coleção, depoimentos, FAQ e contato direto via WhatsApp.",
     tags: ["React", "Vite", "WhatsApp"],
     gradient: "from-amber-500 via-yellow-700 to-emerald-950",
     image: "/projects/porto-aliancas.png",
     href: "https://portoaliancas.vercel.app/",
+  },
+  {
+    slug: "rp-consultoria",
+    title: "RP Consultoria",
+    client: "RP Consultoria | HS Consórcios",
+    category: "Landing Page",
+    description:
+      "Landing page para consultoria de consórcios de imóveis e veículos, com simulador de crédito, marketplace de cartas contempladas e captação de leads via formulário e WhatsApp.",
+    tags: ["Simulador de crédito", "Marketplace de crédito", "WhatsApp"],
+    gradient: "from-red-600 via-red-900 to-neutral-950",
+    image: "/projects/rp-consultoria.png",
+    href: "https://landingpage-rp-consultoria.vercel.app/",
   },
 ];
 
